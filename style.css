@@ -13,8 +13,8 @@ body{
 .John {
   margin: auto;
   border: 2px solid #d1d5db;
-  width: 1440px;
-  height: 600px;
+  max-width: 1440px;
+  max-height: 600px;
   position: relative;
 }
 
@@ -67,8 +67,12 @@ input::placeholder {
   color: #ffffff;
 }
 
-.search img {
-  cursor: pointer;
+.search button{
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 25px;
+  height: 25px;
 }
 
 /*Menu*/
@@ -300,3 +304,13 @@ footer {
   width: 240px;
   height: 27.43px;
 } 
+
+.social a{
+  margin-right: 25px;
+}
+
+@media  (max-width: 915px) {
+  header{
+   max-width: 100%;
+  }
+}
