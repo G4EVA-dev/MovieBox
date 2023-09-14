@@ -258,7 +258,7 @@ main{
   color: #111827;
 }
 
-.releaseDate h2{
+.releaseDate h2, .runtime h2{
   width: 114px;
   height: 16px;
   font-size: 12px;
