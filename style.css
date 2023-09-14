@@ -289,9 +289,9 @@ footer {
   justify-content: center;
   text-align: center;
   margin-top: 160px;
-  background-color: #5289e7;
-  color: #fff;
-  box-shadow: 0.5px 0.5px 0 2px rgb(45, 45, 82);
+  background-color: whitesmoke;
+  color: #000;
+  /* box-shadow: 0.5px 0.5px 0 2px rgb(45, 45, 82); */
 }
 
 .termLinks  a{
@@ -299,7 +299,7 @@ footer {
   text-decoration: none;
   font-size: 1.5rem;
   transition-property: color;
-  color: #fff;
+  color: #000;
   font-weight: 700;
 }
 
