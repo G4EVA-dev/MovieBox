@@ -9,25 +9,28 @@ async function searchMovie(apID) {
   var data = await response.json();
 
   //!LOCAL VARIABLES
-  let releaseDate = data.release_date;
-  let runtime = data.runtime;
-  let title = data.title;
+  let releaseDate = `Release Date: ${data.release_date}` ;
+  let runtime = `Runtime: ${data.runtime}`;
+  let title = `Title: ${data.title}`;
   let overview = data.overview;
   let posterPath = data.poster_path;
   let scrUrl = "https://image.tmdb.org/t/p/original";
   let poster = scrUrl + posterPath;
 
-  if (response.status === 404) {
-    alert("Error");
-  } else {
-    document.querySelector("#movieTitle").innerHTML = data.title;
-    document.querySelector("#movieDate").innerHTML = data.release_date;
+  if (response.status === 404 || response.status === 34) {
+    alert("Error!!! Movie not found or Check Internet Network ");
+  } 
+  else {
     document.querySelector("#moviePoster").innerHTML = poster;
-    document.querySelector("#runtime").innerHTML = runtime;
+    document.querySelector("#movieTitle").innerHTML = title;
+    document.querySelector("#movieReleaseDate").innerHTML = releaseDate;    
+    document.querySelector("#movieRuntime").innerHTML = runtime;
+    document.querySelector("#movieverview").innerHTML = overview;
   }
 
-  // console.log(data);
-}
+  console.log(data);
+} 
+
 searchButton.addEventListener("click", () => {
   searchMovie(searchInput.value);
 });

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="details.css">
+</head>
+<body>
+  <div class="container">
+    <div data-testid="movie-card" class="movieCard">
+      <div class="poster">
+        <img id="MoviePoster"
+          data-testid="movie-poster"
+          src="./assets/shangChi.png"
+          alt="Shang-Chi"
+        />
+      </div>
+      <div class="title">
+        <h1 id="MovieTitle" data-testid="movie-title">
+          Shang-Chi and the Legend of the Ten Rings
+        </h1>
+      </div>
+      <div class="releaseDate">
+        <h2 id="MovieDate" data-testid="movie-released-date">USA, 2021</h2>
+      </div>
+      <div class="runtime">
+        <h2 id="MovieRuntime" data-testid="movie-runtime"></h2>
+      </div>
+      <div class="overview">
+        <h4 id="MovieOverview" data-testid="movie-overview"></h4>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
