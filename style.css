@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   min-height: 100vh;
   /* animation: transitionIn 1.75s linear; */
-} 
+}
 
 /*! NavBar and Header */
 .John {
@@ -67,7 +67,7 @@ input::placeholder {
   color: #ffffff;
 }
 
-.search button{
+.search button {
   border: 0;
   outline: 0;
   background: none;
@@ -99,14 +99,14 @@ input::placeholder {
   cursor: pointer;
 }
 
-.icon img{
+.icon img {
   background-image: url("./assets/Ellipse\ 1.png");
   background-size: contain;
   cursor: pointer;
 }
 
 /*Description Box */
-.descriptionBox{
+.descriptionBox {
   position: absolute;
   width: 404px;
   height: 285px;
@@ -114,12 +114,14 @@ input::placeholder {
   left: 350px;
   color: #ffffff;
 }
-.rating, .imdb, .rottenTomatoes{
+.rating,
+.imdb,
+.rottenTomatoes {
   display: flex;
   gap: 16px;
 }
 
-.rating{
+.rating {
   gap: 40px;
 }
 
@@ -132,7 +134,7 @@ input::placeholder {
   text-align: left;
 }
 
-.figures p{
+.figures p {
   font-family: DM Sans;
   font-size: 12px;
   font-weight: 400;
@@ -141,7 +143,7 @@ input::placeholder {
   text-align: left;
 }
 
-.content p{
+.content p {
   font-family: sans-serif;
   width: 302px;
   height: 72px;
@@ -153,39 +155,39 @@ input::placeholder {
   margin-top: 10px;
 }
 
-.button button{
+.button button {
   width: 169px;
   height: 36px;
   padding: 7px 16px 6px 16px;
   border-radius: 6px;
-  background-color: #BE123C;
+  background-color: #be123c;
   border: none;
 }
 
-button span{
+button span {
   color: white;
   line-height: 16px;
-  font-size: 16px;  
+  font-size: 16px;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
 }
 
 /*!MAIN*/
 
-main{
+main {
   width: 1440px;
   margin: auto;
 }
 
-.featuredMovie{
+.featuredMovie {
   width: 1308px;
   height: 604px;
   margin: auto;
 }
 
-.featuredText{
+.featuredText {
   width: 1244px;
   height: 47px;
   margin-top: 45px;
@@ -193,7 +195,7 @@ main{
   justify-content: space-between;
 }
 
-.featuredText p{
+.featuredText p {
   font-family: sans-serif;
   font-size: 36px;
   font-weight: 700;
@@ -202,12 +204,12 @@ main{
   text-align: left;
 }
 
-.seeMore{
+.seeMore {
   display: flex;
   gap: 8px;
 }
 
-.seeMore h4{
+.seeMore h4 {
   width: 79px;
   height: 24px;
   font-family: sans-serif;
@@ -216,10 +218,10 @@ main{
   line-height: 25px;
   letter-spacing: 0em;
   text-align: left;
-  color: #BE123C;
+  color: #be123c;
 }
 
-.seeMore img{
+.seeMore img {
   width: 11.67px;
   height: 18.83px;
   border: 2px;
@@ -227,26 +229,24 @@ main{
 
 /*movie list */
 @keyframes transitionIn {
-  from{
+  from {
     opacity: 0;
     transform: translateY(-10dpx);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateY(0);
   }
-  
 }
 
-
-.movieList, .newArrival{
+.movieList,
+.newArrival {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 85px;
-  
 }
 
-.title h1{
+.title h1 {
   width: 250px;
   height: 23px;
   font-family: sans-serif;
@@ -258,31 +258,32 @@ main{
   color: #111827;
 }
 
-.releaseDate h2, .runtime h2{
+.releaseDate h2,
+.runtime h2 {
   width: 114px;
   height: 16px;
   font-size: 12px;
   font-weight: 700;
   line-height: 15.62px;
-  color: #9CA3AF;
+  color: #9ca3af;
 }
 
-.newArrival{
+.newArrival {
   margin-top: 70px;
 }
 
-.poster img{
+.poster img {
   -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.poster img:hover{
+.poster img:hover {
   cursor: pointer;
   filter: grayscale(50%);
   -webkit-transform: scale(1.1);
-	transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 /*!FOOTER*/
@@ -296,21 +297,21 @@ footer {
   padding: 0.5em;
   position: fixed;
   bottom: 0;
-  left:50%;
-  width:100%;
+  left: 50%;
+  width: 100%;
 }
 
-.social{
+.social {
   width: 240px;
   height: 27.43px;
-} 
+}
 
-.social a{
+.social a {
   margin-right: 25px;
 }
 
-@media  (max-width: 915px) {
-  header{
-   max-width: 100%;
+@media (max-width: 915px) {
+  header {
+    max-width: 100%;
   }
 }
