@@ -1,10 +1,10 @@
-* {
-  padding: 0;
+*{
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-/*movie list */
 @keyframes transitionIn {
   from {
     opacity: 0;
@@ -16,49 +16,31 @@
   }
 }
 
-
 body {
   min-height: 100vh;
   overflow-x: hidden;
-  /* animation: transitionIn 1.75s linear; */
+  animation: transitionIn 1.75s linear;
 }
-
-/*! NavBar and Header */
-.John {
-  margin: auto;
-  border: 2px solid #d1d5db;
-  max-width: 1440px;
-  max-height: 600px;
-  position: relative;
-}
-
-.logo {
-  width: 186px;
-  height: 50px;
-  position: absolute;
-  top: 15px;
-  left: 350px;
+/* ! HEADER */
+header{
   display: flex;
-  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  margin-bottom: 45px;
+  color: #fff;
 }
 
-.text h2 {
-  font-family: sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 45px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #ffffff;
+header .logo{
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  font-size: 1.3rem;
 }
-
-/*Search Box*/
+  /* Search */
 .search {
-  position: absolute;
-  width: 525px;
-  height: 36px;
-  top: 22px;
-  left: 693px;
+  width: 530px;
+  height: 40px;
   padding: 6px 10px 6px 10px;
   border: 2px solid #d1d5db;
   border-radius: 6px;
@@ -73,10 +55,8 @@ input::placeholder {
   outline: 0;
   background: transparent;
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 1.2rem;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   color: #ffffff;
 }
@@ -89,81 +69,88 @@ input::placeholder {
   height: 25px;
 }
 
-/*Menu*/
-.menu {
-  width: 114px;
-  height: 36px;
-  position: absolute;
-  top: 30px;
-  left: 1500px;
-  display: flex;
-  gap: 27px;
-}
+  /* Menu  */
+  .menu {
+    width: 114px;
+    height: 36px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .text h3 {
+    color: #ffffff;
+    width: 61px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .icon img {
+    background-image: url("./assets/Ellipse\ 1.png");
+    background-size: contain;
+    cursor: pointer;
+    
+  }
+  
+  .container{
+    width: 100vw;
+    background-image: url("./assets/Wick.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
 
-.text h3 {
-  color: #ffffff;
-  width: 61px;
-  height: 24px;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-  cursor: pointer;
-}
-
-.icon img {
-  background-image: url("./assets/Ellipse\ 1.png");
-  background-size: contain;
-  cursor: pointer;
-}
-
-/*Description Box */
+  /*Description Box */
 .descriptionBox {
-  position: absolute;
   width: 404px;
-  height: 285px;
-  top: 158px;
-  left: 350px;
+  height: 300px;
   color: #ffffff;
+  margin-left: 10%;
+  margin-top: 12px;
 }
-.rating,
+
+ .rating {
+  width: 250px;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  padding-right: 1em;
+}
+.rating img{
+  height: 17px;
+}
 .imdb,
 .rottenTomatoes {
-  display: flex;
-  gap: 16px;
-}
-
-.rating {
-  gap: 40px;
+  display: flex; 
 }
 
 .descriptionBox h1 {
-  font-family: sans-serif;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 56px;
   letter-spacing: 0em;
   text-align: left;
 }
 
-.figures p {
-  font-family: DM Sans;
+/* .figures p {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
-}
+} */
 
 .content p {
-  font-family: sans-serif;
-  width: 302px;
+  width: 300px;
   height: 72px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
-  line-height: 18pxpx;
+  line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
   margin-top: 10px;
@@ -176,6 +163,7 @@ input::placeholder {
   border-radius: 6px;
   background-color: #be123c;
   border: none;
+  margin-top: 20px;
 }
 
 button span {
@@ -188,22 +176,25 @@ button:hover {
   cursor: pointer;
 }
 
+
+
+
 /*!MAIN*/
 
 main {
   max-width: 1440px;
   height: 100vh; 
   margin: auto;
+  padding: 1.5em;
 }
 
 .featuredMovie {
-  width: 1308px;
-  height: 604px;
-  margin: auto;
+  width: 100%;
+  height: 100vh;
 }
 
 .featuredText {
-  width: 1244px;
+  width: 1370px;
   height: 47px;
   margin-top: 45px;
   display: flex;
@@ -211,7 +202,6 @@ main {
 }
 
 .featuredText p {
-  font-family: sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 47px;
@@ -242,18 +232,23 @@ main {
   border: 2px;
 }
 
+.movieCard{
+  width: 250px;
+  height: fit-content;
+  background-color: whitesmoke;
+}
 
 .movieList{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 85px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 100px;
 }
 
 .releaseDate h2,
 .runtime h2  {
   width: 200px;
   height: 20px;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 700;
   line-height: 15.62px;
   color: #9ca3af;
@@ -273,12 +268,20 @@ main {
   transform: scale(1.1);
 }
 
+.heart img{
+  width: 30px;
+  height: 30px;
+  background-image: url("./assets/Ellipse\ 3.png");
+  background-size: cover;
+}
+
+.heart img:hover,
+.heart img:focus{
+  background: red;
+  cursor: pointer;
+}
+
 /*!FOOTER*/
-/* footer{
-  width: 492px;
-  height: 145.43px;
-  margin: 50px auto;
-}  */
 
 footer {
   padding: 1.5em;  
@@ -289,9 +292,7 @@ footer {
   justify-content: center;
   text-align: center;
   margin-top: 160px;
-  background-color: whitesmoke;
   color: #000;
-  /* box-shadow: 0.5px 0.5px 0 2px rgb(45, 45, 82); */
 }
 
 .termLinks  a{
@@ -315,8 +316,64 @@ footer {
   gap: 70px;
 }
 
-@media (max-width: 915px) {
-  header {
+@media (max-width: 750px) {
+  
+  .descriptionBox {
+    width: 310px;
+  }
+  .movieList {
+    grid-template-columns: max-content;
+  }
+  .search{
+    width: 90%;
+  }
+  .text h2, .menu{
+    display: none;
+  }
+  .movieList{
+    justify-content: center;
+  }
+  .seeMore{
+    display: none;
+  }
+  .featuredText{
     width: 100%;
+  }
+  .featuredText p{
+    justify-content: center;
+  }
+  .footer{
+    width: 300px;
+  }  
+  .termLinks{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header{
+    gap: 1px;
+  }
+
+  .logo .poster img{
+    width: 35px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    background-image: url("./assets/Wick.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+  
+
+  .icon{
+    display: none;
+  }
+
+  .text h2{
+    font-size: 1rem;
   }
 }
