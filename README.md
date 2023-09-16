@@ -20,3 +20,4 @@ MovieBox is a web application that allows users to explore, search for, and save
 - [Document how users can save and manage their favorite movies if this feature is implemented.]
 
 ## 4. Development
+But I didn't Complete with the Project because I got sick and that's all I could.
